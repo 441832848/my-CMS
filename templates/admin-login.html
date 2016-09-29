@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登录页面</title>
+    <link rel="shortcut icon" href="../images/admin.ico">
+    <script type="text/javascript" src="../js/jQuery.min.js"></script>
+    <script type="text/javascript" src="../js/adminLogin.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/adminLogin.css">
+</head>
+<body>
+    <fieldset>
+        <legend>后台登录</legend>
+        <form method="post" action="" autocomplete="off">
+            <input type="text" name="action" style="display: none;" value="login">
+            <p><label>帐&nbsp;&nbsp;&nbsp;号:&nbsp;<input type="text" name="admin_user"></label></p>
+            <p><label>密&nbsp;&nbsp;&nbsp;码:&nbsp;<input type="password" name="admin_pass"></label></p>
+            <p><label>验证码:&nbsp;<input type="text" name="validateCode" placeholder="请输入验证码,不区分大小写"></label></p>
+            <p><img src="../config/validateCode.php" class="validateCodeIamge"> <span>点击图片刷新</span></p>
+            <input type="submit" value="登录">
+        </form>
+    </fieldset>
+</body>
+</html>
