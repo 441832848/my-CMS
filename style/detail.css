@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * detail web styles
+ * @authors Sc (hellosc@qq.com)
+ * @date    2016-09-19 15:41:44
+ * @version $Id$
+ */
+
+    #document{
+        width: 690px;
+    }
+    #document>h1{
+        font-size: 28px;
+        text-align: center;
+        margin: 12px auto;
+        letter-spacing: 1px;
+    }
+    #document>p.small-title{
+        text-align: center;
+        font-size: 14px;
+    }
+    #document>div.info{
+        width: 630px;
+        background-color: #f9f3e7;
+        margin: 20px auto;
+        padding: 14px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+    }
+    #document>div.content{
+        background-color: #f5f3f0;
+        padding: 20px;
+        font-size: 16px;
+        font-family: Microsoft YaHei;
+        line-height: 2;
+    }
+    #document>div.content object{
+        margin-left: 0px !important;
+    }
+

@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/**
+ * 前台css
+ * @authors Sc (hellosc@qq.com)
+ * @date    2016-08-22 16:53:07
+ * @version 1.0
+ */
+
+/* global */
+body,h1,h2,h3,p,form,ul,li,dd,dt,dl{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: '宋体';
+    width: 960px;
+    margin: 0 auto;
+    font-size: 12px;
+    background: #fff;
+    color: #666;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 10px;
+    color: #360;
+    letter-spacing: 1px;
+    background-image: url(../images/lbg.png);
+    background-position: 100% 100%;
+}
+.block_div{
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
+.block_div li{
+    height: 23px;
+    line-height: 23px;
+}
+.block_div li em{
+    float: right;
+    margin: 0 10px 0 0;
+}
+.block_div li a{
+    color: #666;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.block_div li a:hover{
+    text-decoration: underline;
+}
+.block_total{
+    border: 1px solid #ccc;
+    margin-top: 7px;
+    height: 202px;
+}
+
+
+/* top */
+#top{
+    height: 26px;
+    background: orange;
+    margin: 0 0 10px 0;
+    background-image: url(../images/top_bg.png);
+    text-align: right;
+
+}
+#top a{
+    text-decoration: none;
+    color: #666;
+    line-height: 26px;
+    margin: 0 10px 0 0;
+}
+#top a:hover{
+    color:orange;
+    text-decoration: underline;
+}
+#top a.top-tips{
+    color:green;
+}
+#top a.top-tips:hover{
+    color:#3f6;
+}
+#header{
+    height: 80px;
+    margin: 0 0 10px 0;
+}
+#header h1{
+    width: 250px;
+    height: 80px;
+    background: url('../images/logo.png') no-repeat left;
+    /*background-size: cover;*/
+    text-indent: -999px;
+    float: left;
+}
+#header h1 a{
+    border: 1px solid #eee;
+    height: 80px;
+    display: block;
+}
+#adver{
+    width: 690px;
+    height: 80px;
+    float: right;
+}
+#adver img{
+    border: 1px solid #eee;
+    width: 688px;
+    height: 78px;
+}
+#nav{
+    height: 35px;
+    background: url(../images/nav_bg.png);
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+#nav ul{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 0 0 10px;
+}
+#nav ul li{
+    font-weight: bold;
+    display: inline;
+    padding: 0 10px;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: #369;
+    font-size: 14px;
+}
+#nav ul li a:hover{
+    color: #f60;
+}
+#search{
+    height: 25px;
+    margin: 0 0 10px 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 5px 0 0 5px;
+
+}
+#search form{
+    line-height: 25px;
+    float: left;
+}
+#search form select{
+    background: white;
+}
+#search form input.text{
+    width: 200px;
+    height: 16px;
+    background: white;
+}
+#search form input.submit{
+    width: 45px;
+    height: 22px;
+}
+#search strong{
+    line-height: 25px;
+    float: left;
+    margin: 0 0 0 30px;
+}
+#search ul{
+    line-height: 25px;
+    float: left;
+}
+#search li{
+    float: left;
+    padding: 0 0 0 7px;
+    display: inline;
+}
+#search a{
+    text-decoration: none;
+    color: green;
+}
+#search a:hover{
+    color: #f60;
+}
+
+
+
+
+
+
+/* foot */
+#link {
+    width:958px;
+    height:108px;
+    border:1px solid #ccc;
+    float:left;
+    margin:0 0 10px 0;
+}
+#link span {
+    float:right;
+    font-weight:normal;
+    padding:0 10px 0 0;
+}
+#link span a {
+    color:#360;
+    text-decoration:none;
+}
+#link span a:hover {
+    color:#f60;
+}
+#link ul {
+    padding:0 0 0 10px;
+    height:30px;
+    line-height:30px;
+    border-bottom:1px dashed #999;
+    width:98%;
+    margin:0 auto;
+}
+#link ul li {
+    display:inline;
+    padding:5px 5px 0 5px;
+}
+#link ul li a {
+    color:#666;
+    text-decoration:none;
+}
+#link ul li a:hover {
+    text-decoration:underline;
+}
+#link dl {
+    padding:10px 0 0 8px;
+}
+#link dl dd {
+    padding:0 8px;
+    float:left;
+}
+#link dl dd img {
+    border:none;
+    display:block;
+}
+#footer {
+    width:960px;
+    height:40px;
+    float:left;
+}
+#footer p {
+    text-align:center;
+    line-height:150%;
+    font-family:Tahoma;
+    color:#333;
+}
+#footer p span {
+    color:#06f;
+}

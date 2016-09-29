@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-08-03 11:01:42
+ * @version $Id$
+ */
+
+    /* reset */
+    body,h1,h2,h3,h4,h5,h6,p,ul,li,a,dl,td,th{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* global */
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: #ccc;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    *{
+        outline: none;
+    }
+    .red{
+        font-weight: bold;
+        color:#f55 !important;
+        letter-spacing: 1px;
+    }
+    .green{
+        font-weight: bold;
+        color:#4378ff !important;
+        letter-spacing: 1px;
+    }
+
+    /* top */
+    #top{
+        height: 80px;
+        width: 100%;
+        background: url(../images/admin_top_bg.gif);
+    }
+    #top>h1{
+        width: 240px;
+        height: 80px;
+        background-image: url(../images/admin-logo.png);
+        background-size: cover;
+        text-indent: -9999px;
+        float: left;
+    }
+    #top>ul{
+        float: left;
+        height: 40px;
+        width: 360px;
+        padding: 40px 0px 0px 20px;
+    }
+    #top>ul>li{
+        margin-top: 7px;
+    }
+    #top>ul>li>a{
+        display: block;
+        text-align: center;
+        line-height: 33px;
+        font-family: Microsoft YaHei;
+        /*margin:0px 0px 0px 10px;*/
+        width: 58px;
+        height: 33px;
+        float: left;
+        color: #eee;
+        background: url(../images/li_bg.png) no-repeat left bottom;
+    }
+    #top>ul>li>a.selected,#top>ul>li>a:hover{
+        background: url(../images/li_bg.png) no-repeat right bottom;
+        text-decoration: none;
+        color: #3b6ea5;
+    }
+    #top>p{
+        float: right;
+        color: #222;
+        font-family: Microsoft YaHei;
+        margin: 57px 0px 0px 0px;
+    }
+    #top a.admin-user{
+        color: #fa4;
+        font-weight: bold;
+    }
+
+    /* left */
+    #left{
+        width: 150px;
+        background: #f7fbfc url(../images/sidebar_right.png) repeat-y right;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        bottom: 0px;
+    }
+    #left>dl{
+        display: inline-block;
+        float: right;
+        width: 130px;
+        margin: 30px 0px 0px 12px;
+    }
+    #left>dl>dt{
+        width: 90%;
+        display: inline-block;
+        font-size: 18px;
+        font-family: SimHei;
+        color: #3b6ea5;
+        padding-bottom: 5px;
+        border-bottom:1px solid #ccc;
+        margin-bottom: 5px;
+    }
+    #left>dl>dd{
+        font-size: 14px;
+        margin-left: 0px;
+        padding-top: 5px;
+    }
+    #left>dl>dd>a{
+        color: #666;
+        margin-top: 10px;
+    }
+    #left>dl>dd>a.selected{
+        font-weight: bold;
+    }
+
+    /* right */
+    #right{
+        background: #f7fbfc;
+        position: absolute;
+        top: 80px;
+        left: 150px;
+        bottom: 0px;
+        right: 0px;
+        padding:10px;
+        overflow: auto;
+    }
+    #right>p.rightNav{
+        padding: 10px 10px 10px 0px;
+        color: #345;
+        font-family: Microsoft YaHei;
+        font-style: italic;
+    }
+    #right>p.rightNav>a{
+        color: #55f;
+    }
+    #right>p.rightNav>a:last-child{
+        color: #234;
+        cursor: default;
+    }
+    #right .page{
+        width: 95%;
+        height: 35px;
+        font-family: Microsoft YaHei;
+        margin: 10px auto;
+        text-align: center;
+    }
+    #right .page>a,#right .page>div.pageSize{
+        font-size: 13px;
+        background: #fff;
+        border: none;
+        line-height: 25px;
+        border: 1px solid rgb(194, 213, 227);
+    }
+    #right .page>a:hover{
+        border-color: #369;
+    }
+    #right .page>div.pageSize{
+        display: inline-block;
+        padding: 0px 10px;
+    }
+    #right .page>div.pageSize>input{
+        height: 20px;
+        margin: 0px 0px 2px 0px;
+        width: 30px;
+        border: 1px solid rgb(194, 213, 227);
+    }
+    #right .page>a{
+        color: #333;
+        padding:5px 8px;
+        margin: 0px 2px;
+    }
+    #right .page>a{
+        text-decoration: none;
+    }
+    #right form input,#right form select{
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        height: 20px;
+    }
+    #right form input:focus,#right form select:focus,#right form textarea:focus{
+        border:1px solid green;
+    }
+
+
+    /* right xxx list */
+    #right .manageList,
+    #right .levelList,
+    #right .navList,
+    #right .docList
+    {
+        border: none;
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    /* right xxx list */
+    #right table{
+        border-collapse: collapse;
+        font-size: 14px;
+    }
+    #right table caption h3{
+        font-size: 26px;
+        height: 35px;
+        font-family: SimHei;
+        letter-spacing: 1px;
+    }
+    #right table caption span.action{
+        float: right;
+        margin-right: 20px;
+        line-height: 2;
+    }
+    #right table caption span.action>a{
+        color: #47b;
+        font-weight: bold;
+    }
+    #right table td,#right table th{
+        min-width: 120px;
+        border: none;
+        border-bottom: 1px solid #edc;
+        line-height: 2.5;
+        text-align:  center;
+    }
+    #right table tr:hover{
+        background: rgb(245,227,242);
+    }
+    #right table th,#right table th>select{
+        font-size: 16px;
+        font-family: Microsoft YaHei;
+        font-weight: normal;
+        background: #eef3f7;
+        line-height: 3;
+    }
+    #right table th>select{
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    #right table td a:first-child{
+        color: #25f;
+    }
+    #right table td a:last-child{
+        color: #f25;
+    }
+    #right input[readonly]{
+        color:#fbb;
+        font-weight: bold;
+    }
+    #right fieldset{
+        border-radius: 5px;
+    }
+
+    /* 
+        xxx list add,update...
+    */
+    #right .manageList.add form,
+    #right .manageList.update form,
+    #right .levelList.add form,
+    #right .levelList.update form,
+    #right .navList.add form,
+    #right .navList.update form,
+    #right .navList.addChild form,
+    #right .docList.add form,
+    #right .docList.update form
+    {
+        width: 550px;
+        margin: 10px auto;
+    }
+    #right .manageList.add form p,
+    #right .manageList.update form p,
+    #right .levelList.add form p,
+    #right .levelList.update form p,
+    #right .navList.add form p,
+    #right .navList.update form p,
+    #right .navList.addChild form p,
+    #right .docList.add form p,
+    #right .docList.update form p
+    {
+        line-height: 2;
+    }
+
+    /* alone style */
+    #right .docList.edit form{
+        font-family: SimSun;
+        width: 85%;
+        margin-left: 40px;
+        min-width: 820px;
+    }
+    #right .docList.edit form input,#right .docList.edit form select{
+        height: 24px !important;
+        width: 400px;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0px 0px 3px 0px;
+    }
+
+
+    #right .docList.edit form span{
+        font-size: 14px;
+        color: #aaa;
+    }
+    #right .docList.edit form p{
+        height: 37px;
+    }
+
+    #right .docList.edit form input.sm-field,#right .docList.edit form select.sm-field{
+        width: 200px;
+    }
+    #right .docList.edit form textarea.lg-textarea{
+        width: 400px;
+        height: 70px;
+    }
+    #right .docList.edit form p.bg-p{
+        height: 80px;
+    }
+    #right .docList.edit form button.lg-button{
+        background: #eee;
+        padding: 5px 10px;
+        font-size: 16px;
+        line-height: 18px;
+        font-family: Microsoft YaHei;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+    #right .docList.edit form p.sm-button{
+        margin:10px 0px;
+    }
+    #right .docList.edit form input[type=file]{
+        width: 175px;
+    }
+    #right .docList.edit form button[type]{
+        margin-right:20px;
+    }
+    #right .docList.edit form input[type=checkbox],#right .docList.edit form input[type=radio]{
+        width: 14px;
+        min-width: 14px !important;
+        height: 14px !important;
+        margin: 5px;
+        padding: 0px;
+    }
+
+
+
+
+

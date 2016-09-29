@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-08-14 12:18:41
+ * @version $Id$
+ */
+    
+    html,body{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color:#fef2de;
+        background-image: url(https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/skin/10.jpg);
+        background-size: cover; 
+        font-family: Microsoft YaHei;
+    }
+    fieldset{
+        background-color: rgba(70,70,70,0.2);
+        border-radius: 10px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        width: 400px;
+        margin: 70px auto;
+        padding: 20px;
+    }
+    fieldset legend{
+        color: #eeeeee;
+        text-shadow: 1px 1px 2px #000;
+    }
+    fieldset p{
+        color: #eee;
+        font-size: 20px;
+        line-height: 30px;
+        height: 30px;
+        text-shadow: 1px 1px 2px #123;
+    }
+    fieldset span{
+        font-family: 宋体;
+        font-size: 14px;
+        color:#eee;
+        text-shadow: none;
+    }
+    fieldset img{
+        margin-left: 75px;
+    }
+    fieldset input{
+        font-family: KaiTi;
+        font-size: 18px;
+        width: 240px;
+        height: 26px;
+        border: 2px solid #ddf;
+        border-radius: 5px;
+    }
+    fieldset input[type=submit]{
+        margin-left: 75px;
+        font-family: Microsoft YaHei;
+        line-height: 22px;
+        height: 28px;
+        font-size: 16px;
+        width: 60px;
+        color: #345;
+        outline: none;
+        border: 1px solid #ccc;
+    }
+    fieldset input[type=submit]:hover{
+        background: #fefefe;
+    }

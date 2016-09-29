@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Sc (hellosc@qq.com)
+ * @date    2016-05-09 09:47:00
+ * @version 2.0
+ *          分离basic.css
+ */
+
+
+/* global */
+body{
+    background-color: #dadada;
+}
+
+#user{
+    width: 268px;
+    height: 398px;
+    float: right;
+    margin: 0 0 10px 0;
+    border: 1px solid #ccc;
+}
+#user form{
+    position: relative;
+}
+#user form label{
+    display: block;
+    padding: 8px 0 5px 12px;
+}
+#user form label input.text{
+    width: 180px;
+    height: 20px;
+    background: #eee;
+    border: 1px solid #666;
+}
+#user form label input.code{
+    width: 100px;
+}
+#user form img{
+    width: 70px;
+    height: 28px;
+    position: absolute;
+    top: 80px;
+    left: 170px;
+}
+#user form p{
+    text-align: center;
+}
+#user form p a{
+    color: green;
+    text-decoration: none;
+}
+#user form p a:hover{
+    text-decoration: underline;
+}
+#user form input.submit{
+    width: 45px;
+    height: 22px;
+    font-size: 12px;
+}
+#user .is-login{
+    height: 140px;
+}
+#user .is-login>hr{
+    width: 80%;
+    border: 1px solid #cfc;
+}
+#user .is-login>div.tips{
+    text-align: center;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+}
+#user .is-login>div.tips>.name{
+    color: #ff9752;
+}
+#user .is-login>div.user-info{
+    width: 65%;
+    margin: 24px auto;
+}
+#user .is-login>div.user-info>.face{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+#user .is-login>div.user-info>.user-link{
+    float: right;
+}
+#user .is-login>div.user-info>.user-link>a{
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    text-decoration: none;
+    color: green;
+    line-height: 25px;
+}
+#user .is-login>div.user-info>.user-link>a:hover{
+    color: #ff9a57;
+}
+#user h3{
+    font-size: 12px;
+    padding: 8px 10px;
+}
+#user h3 span{
+    font-family: '微软雅黑';
+    color: #ccc;
+}
+#user dl{
+    float: left;
+    width: 72px;
+    text-align: center;
+    padding: 0 0 5px 12px;
+}
+#user img{
+    display: block;
+}
+#user dl dd{
+    line-height: 20px;
+}
+#news{
+    width: 378px;
+    height: 398px;
+    /*background: green;*/
+    float: right;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+#news h3{
+    margin: 10px 0;
+    text-align: center;
+}
+#news a{
+    text-decoration: none;
+}
+#news a:hover{
+    text-decoration: underline;
+}
+#news h3 a{
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+}
+#news h3 a:hover{
+    text-decoration: underline;
+}
+#news p{
+    margin: 10px 0;
+    line-height: 18px;
+}
+#news p.link{
+    border-bottom: 1px solid #ccc;
+}
+#news p.link a{
+    display: inline-block;
+    margin: 3px 0;
+    color: green;
+}
+#news ul{
+    margin: 3px 0 0 0;
+    font-size: 12px;
+}
+#news ul li{
+    /*margin: 5px 0 ;*/
+    height: 23px;
+    line-height: 23px;
+}
+#news ul li em{
+    float: right;
+    margin: 0 10px 0 0;
+}
+#news ul li a{
+    color: #666;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#news ul li a:hover{
+    text-decoration: underline;
+}
+#pic{
+    width: 270px;
+    height: 200px;
+    float: left;
+    margin: 0 0 5px 0;
+    border: none;
+}
+#pic img{
+    display: block;
+}
+#rec{
+    width: 268px;
+    height: 193px;
+    float: left;
+    border: 1px solid #ccc;
+}
+#rec ul{
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
+#rec ul li{
+    /*margin: 5px 0 ;*/
+    height: 23px;
+    line-height: 23px;
+}
+#rec ul li em{
+    float: right;
+    margin: 0 10px 0 0;
+}
+#rec ul li a{
+    color: #666;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#rec ul li a:hover{
+    text-decoration: underline;
+}
+#sidebar-right{
+    width: 270px;
+    height: 835px;
+    clear: both;
+    float: right;
+    margin: 0 0 10px 0;
+}
+#sidebar-right img{
+    width: 270px;
+    height: 200px;
+}
+#sidebar-right .vote{
+    height: 200px;
+    padding: 1px 0 0 0;
+}
+#sidebar-right .vote h3{
+    color: green;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px dashed #ccc;
+    width: 90%;
+    margin: 5px auto;
+}
+#sidebar-right .vote form label{
+    display: block;
+    line-height: 20px;
+    margin: 0 0 0 5px;
+}
+#sidebar-right .vote form p{
+    text-align: center;
+    margin-top: 5px;
+}
+#sidebar-right .vote form p button{
+    font-size: 12px;
+    width: 50px;
+    height: 23px;
+    margin: 5px;
+}
+#picnews {
+    width:678px;
+    height:198px;
+    border:1px solid #ccc;
+    float:left;
+    margin:0 0 10px 0;
+}
+#picnews dl {
+    width:156px;
+    float:left;
+    padding:10px 0 0 11px;
+}
+#picnews dl dt {
+    border:1px solid #999;
+    padding:2px;
+}
+#picnews dl dt img {
+    border:none;
+    display:block;
+}
+#picnews dl dd {
+    padding:5px;
+    text-align:center;
+}
+#picnews dl dd a {
+    color:#666;
+    text-decoration:none;
+}
+#picnews dl dd a:hover {
+    text-decoration:underline;
+}
+#newslist {
+    width:680px;
+    height:625px;
+    float:left;
+    margin:0 0 10px 0;
+}
+#newslist div.list {
+    width:49%;
+    height:306px;
+    border:1px solid #ccc;
+    float:left;
+}
+#newslist div.list h2 a {
+    float:right;
+    padding:0 10px 0 0;
+}
+#newslist div.list h2 a {
+    color:green;
+    text-decoration:none;
+}
+#newslist div.list h2 a:hover {
+    text-decoration:underline;
+}
+#newslist ul {
+    padding:8px 10px 0 10px;
+}
+#newslist ul li {
+    height:24px;
+    line-height:24px;
+    background:url(../images/arrow.png) no-repeat left center;
+    padding:0 0 0 10px;
+}
+#newslist ul li em {
+    float:right;
+    font-style:normal;
+    font-family:Tahoma;
+}
+#newslist ul li a {
+    color:#666;
+    text-decoration:none;
+}
+#newslist ul li a:hover {
+    text-decoration:underline;
+}
+#newslist div.right {
+    float:right;
+}
+#newslist div.bottom {
+    margin:0 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
